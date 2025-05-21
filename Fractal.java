@@ -11,27 +11,10 @@ public class Fractal
 		this.panelWidth = panelWidth;
 	}
 
-    /** Your assignment is to modify drawFractal to be a recursive
-    	method that draws a fractal of your own design.
-    	
-    	The code currently provided in the drawFractal method is 
-    	not recursive, and it doesn't draw a fractal. The current
-    	version of this method simply demonstrates how to use
-    	some of the most common Java drawing methods from the 
-    	Graphics class.
-    	
-    	You may wish to modify the parameters for this method to
-    	meet your own needs.
-    */
     private void drawFractal(Graphics g, int level, int size, 
                              int x, int y,
                              int red, int green, int blue)
-    {   // Code the base case...
-    	// if (?????)
-        //	return;
-
-		// For your recursive method, here is where to put 
-		// code to draw something
+    { 
 		if(level > 1){
 			if((level % 2 == 0)){
 				drawFractal(g, level-1, size-4, x+(size*size), y-(size*(size)), red+30, green-10, blue-10);
@@ -40,16 +23,10 @@ public class Fractal
 				drawFractal(g, level-1, size-4, x-(size*size), y+(size*(size)), red-30, green+10, blue+10);
 			}
 		}
-		// The code below can be removed when you create your 
-		// recursive fractal method. The code below just 
-		// demonstrates how to use various Graphics methods
 		
-		// Use the color settings that were passed in via
-		// the method's parameters
         g.setColor(new Color(red, green, blue));
         
- 		// Create arrays of x and y values to show how to
- 		// use the fillPolygon method
+ 		
 		
 		int[] xPt = {x, x+size, x-size};
 		int[] yPt = {y, y+size*2, y+size*2};
@@ -69,28 +46,7 @@ public class Fractal
 
 
 		
-		// Next, draw two circles with a different color
-       
-        /*g.setColor(new Color(red-50, green+100, blue+25));
-		g.fillOval(x-size*2, y-size*2, size, size);       
-		g.fillOval(x+size, y-size*2, size, size);       */
-        
-        // Finally, a rectangle with yet another color
-       /*g.setColor(new Color(red+80, green-100, blue+100));
-		g.fillRect(x-size*2, y+size*4, size*4, size/4);  */     
-        		
-		// ... and then put some recursive calls to the 
-		// drawFractal method here.
-		//
-		// Your recursive calls may have:
-		//  - Different positions
-		//  - Different colors
-		//  - Different level
-		//  - Different size
-		// ... or some of those may remain the same from one
-		// level to the next
 		
-		// drawFractal (g, level-1, etc....);
 		
 		
     } // end drawFractal method
