@@ -12,7 +12,7 @@ This is a small Java project to experiment with **JavaFX** and **GUI design**. T
 🛠️ Technologies Used
 - Java
 - JavaFX
-- IntelliJ IDEA / Eclipse (or your preferred IDE)
+- Microsoft Visual Studio
 
 📚 What I Learned
 This project helped me:
