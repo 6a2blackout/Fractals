@@ -16,7 +16,6 @@ This is a small Java project to experiment with **JavaFX** and **GUI design**. T
 
 📚 What I Learned
 
-This project helped me:
 - Understand how JavaFX applications are structured
 - Practice designing basic GUI layouts
 - Explore the process of linking Java logic with UI elements
