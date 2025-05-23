@@ -14,8 +14,9 @@ This is a small Java project to experiment with **JavaFX** and **GUI design**. T
 - JavaFX
 - Microsoft Visual Studio
 
-📚 What I Learned
+---
 
+📚 What I Learned
 - Understand how JavaFX applications are structured
 - Practice designing basic GUI layouts
 - Explore the process of linking Java logic with UI elements
